@@ -1,18 +1,30 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-  <!-- Link the style sheet here -->
+  <meta charset="UTF-8">
+  <title>About Us</title>
+
+  <!-- REQUIRED style sheets (as per PDF) -->
+  <link rel="stylesheet" href="/static/style.css">
+  <link rel="stylesheet" href="/static/bootstrap.min.css">
 </head>
-<div>
+
+<body>
+
+  <!-- NAVBAR -->
   <nav class="navbar navbar-expand-lg navbar-light" style="background-color:darkturquoise; height: 1in;">
     <div class="container-fluid">
       <h2 style="padding-right: 5%;">Dealerships</h2>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+              data-bs-target="#navbarText" aria-controls="navbarText"
+              aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
+
       <div class="collapse navbar-collapse" id="navbarText">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
           <li class="nav-item">
-            <a class="nav-link" style="font-size: larger;" aria-current="page" href="/">Home</a>
+            <a class="nav-link" style="font-size: larger;" href="/">Home</a>
           </li>
           <li class="nav-item">
             <a class="nav-link active" style="font-size: larger;" href="/about">About Us</a>
@@ -24,45 +36,63 @@
       </div>
     </div>
   </nav>
-  
-    <div class="card" style="width: 80%;margin: auto; margin-top:5%;">
-      <div class="banner" name="about-header">
-      <!-- Insert header information here -->
-      </div>
-      <div style="display: flex;flex-direction: row; margin:auto">
+
+  <!-- MAIN CARD -->
+  <div class="card" style="width: 80%; margin: auto; margin-top:5%; padding: 20px;">
+
+    <!-- ABOUT HEADER (MANDATORY CONTENT) -->
+    <div class="banner" name="about-header">
+      <h1>About Us</h1>
+      <p>
+        Welcome to Best Cars dealership, home to the best cars in North America.
+        We deal in selling domestic and imported cars at reasonable prices.
+      </p>
+    </div>
+
+    <!-- TEAM SECTION -->
+    <div style="display: flex; flex-direction: row; justify-content: space-around; margin-top: 30px;">
+
       <div class="card" style="width: 30%;">
-        <img class="card-img-top" src="/static/person.png" alt="Card image">
+        <img class="card-img-top" src="/static/person.png" alt="Person 1">
         <div class="card-body">
-          <p class="title">Person1</p>
-          <p>Person1 Title</p>
-          <p class="card-text">Some text that explains the person1 in about 2 short sentences</p>
-          <p>person1@example.com</p>
+          <p class="title"><strong>Rahul Sharma</strong></p>
+          <p>Sales Manager</p>
+          <p class="card-text">
+            Rahul has over 10 years of experience helping customers find the
+            perfect car for their needs.
+          </p>
+          <p>rahul.sharma@bestcars.com</p>
         </div>
       </div>
 
       <div class="card" style="width: 30%;">
-        <img class="card-img-top" src="/static/person.png" alt="Card image">
+        <img class="card-img-top" src="/static/person.png" alt="Person 2">
         <div class="card-body">
-          <p class="title">Person2</p>
-          <p>Person2 Title</p>
-          <p class="card-text">Some text that explains the person2 in about 2 short sentences</p>
-          <p>person2@example.com</p>
+          <p class="title"><strong>Anita Verma</strong></p>
+          <p>Customer Relations</p>
+          <p class="card-text">
+            Anita ensures every customer enjoys a smooth and satisfying buying
+            experience.
+          </p>
+          <p>anita.verma@bestcars.com</p>
         </div>
       </div>
 
       <div class="card" style="width: 30%;">
-        <img class="card-img-top" src="/static/person.png" alt="Card image">
+        <img class="card-img-top" src="/static/person.png" alt="Person 3">
         <div class="card-body">
-          <p class="title">Person3</p>
-          <p>Person3 Title</p>
-          <p class="card-text">Some text that explains the person3 in about 2 short sentences</p>
-          <p>person3@example.com</p>
+          <p class="title"><strong>Michael Brown</strong></p>
+          <p>Technical Advisor</p>
+          <p class="card-text">
+            Michael provides expert guidance on vehicle performance and
+            maintenance.
+          </p>
+          <p>michael.brown@bestcars.com</p>
         </div>
       </div>
-    </div>
-    </div>
-    </div>
-    
-</div>
 
+    </div>
+  </div>
+
+</body>
 </html>
