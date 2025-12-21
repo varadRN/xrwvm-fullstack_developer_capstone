@@ -1,18 +1,16 @@
-# Uncomment the imports before you add the code
-# from django.urls import path
-from django.conf.urls.static import static
+from django.urls import path
+from . import views
 from django.conf import settings
-# from . import views
+from django.conf.urls.static import static
 
 app_name = 'djangoapp'
+
 urlpatterns = [
-    # # path for registration
+    # ✅ Dealer proxy APIs
+    path('dealers', views.get_dealers, name='get_dealers'),
+    path('dealers/<str:state>', views.get_dealers_by_state, name='get_dealers_by_state'),
+]
 
-    # path for login
-    # path(route='login', view=views.login_user, name='login'),
-
-    # path for dealer reviews view
-
-    # path for add a review view
-
-] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+# ✅ Static & media (safe for lab)
+if settings.DEBUG:
+    urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
