@@ -1,0 +1,46 @@
+curl -X GET http://localhost:8000/djangoapp/carmakes
+
+[
+  {
+    "id": 1,
+    "name": "Toyota",
+    "models": [
+      {
+        "id": 1,
+        "name": "Camry"
+      },
+      {
+        "id": 2,
+        "name": "Corolla"
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "name": "Honda",
+    "models": [
+      {
+        "id": 3,
+        "name": "Civic"
+      },
+      {
+        "id": 4,
+        "name": "Accord"
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "name": "Ford",
+    "models": [
+      {
+        "id": 5,
+        "name": "Mustang"
+      },
+      {
+        "id": 6,
+        "name": "F-150"
+      }
+    ]
+  }
+]
