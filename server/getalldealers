@@ -1,0 +1,30 @@
+curl -X GET http://localhost:8000/djangoapp/dealers
+
+{
+  "dealers": [
+    {
+      "id": 1,
+      "name": "Best Cars Auto",
+      "city": "Los Angeles",
+      "state": "CA",
+      "address": "123 Main Street",
+      "zip": "90001"
+    },
+    {
+      "id": 2,
+      "name": "Super Wheels",
+      "city": "Dallas",
+      "state": "TX",
+      "address": "456 Elm Street",
+      "zip": "75001"
+    },
+    {
+      "id": 3,
+      "name": "Prime Motors",
+      "city": "New York",
+      "state": "NY",
+      "address": "789 Broadway",
+      "zip": "10001"
+    }
+  ]
+}
