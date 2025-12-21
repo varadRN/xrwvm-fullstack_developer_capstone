@@ -13,6 +13,12 @@ urlpatterns = [
     # Frontend pages
     path('', TemplateView.as_view(template_name="Home.html"), name='home'),
     path('contact/', TemplateView.as_view(template_name="Contact.html"), name='contact'),
+    path('dealers/', TemplateView.as_view(template_name="index.html")),
+    path('dealer/<int:dealer_id>', TemplateView.as_view(template_name="index.html")),
+    path('postreview/<int:dealer_id>', TemplateView.as_view(template_name="index.html")),
+
+
+
 ]
 
 # Static & media handling
