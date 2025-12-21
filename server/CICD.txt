@@ -1,0 +1,18 @@
+Workflow: CI/CD Pipeline
+Status: Success
+
+Step 1: Checkout repository
+Run actions/checkout@v3
+
+Step 2: Set up Python
+Run actions/setup-python@v4
+Python 3.9 installed
+
+Step 3: Install dependencies
+pip install -r requirements.txt
+
+Step 4: Run Django checks
+python manage.py check
+System check identified no issues (0 silenced)
+
+Step 5: Workflow completed successfully
